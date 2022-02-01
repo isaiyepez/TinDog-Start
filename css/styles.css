@@ -2,34 +2,29 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-h1 {
-    font-family: "Montserrat", sans-serif;
+h1, h2 {
     font-weight: 900;
     font-size: 3rem;
     line-height: 1.5;
 }
 
-h2 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    font-size: 3rem;
-    line-height: 1.5;
+/* Sections */
+.white-section {
+    background-color: #fff;
+    padding: 7% 15%;
 }
 
-.container-fluid {
-    padding: 3% 15%
-}
-
-#title {
+.colored-section {
     background-color: #ff4c68;
     color: #fff;
+    padding: 2% 5%;
 }
 
 /* Navigation Bar */
 .navbar {
     padding: 0 0 4.5rem;
-
 }
+
 .navbar-brand {
     font-family: "Ubuntu";
     font-size: 2rem;
@@ -52,18 +47,23 @@ h2 {
 
 /* Title Image */
 .title-image {
-    width: 60%;
+    padding-left: 50px;
+    position: absolute;
+    right: 30%;
     transform: rotate(25deg);
+    width: 50%;
+}
+
+.title-image-div {
+    position: relative;
 }
 
 /* Features */
-
 #features {
-    padding: 5rem 0;
-
+    position: relative;
 }
+
 #features h3 {
-    font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
 }
@@ -75,7 +75,7 @@ h2 {
 }
 
 #features i:hover {
-    color: #ff4c68; 
+    color: #ff4c68;
 }
 
 #features p {
@@ -84,30 +84,74 @@ h2 {
 }
 
 /* Testimonials */
-
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
+    text-align: center;
 }
 
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
+    text-align: center;
 }
 
 .carousel-item {
     padding: 7% 15%;
 }
+
 .press-logo {
     width: 15%;
     margin: 1.5rem 1.5rem 3rem;
 }
 
 .testimonial-image {
-    width: 27%;
     border-radius: 50%;
     margin: 2rem;
+    width: 27%;
 }
 
+/* Pricing Section */
+#pricing {
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+.btn-tindog {
+    background-color: #ef8172;
+    border-color: #ef8172;
+    color: #fff;
+}
+
+/* Cta section */
+#cta {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+}
+
+#footer i {
+    font-size: 1rem;
+    padding: 0.75rem 0.5rem;
+}
+
+/* Media */
+@media (max-width: 1028px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        width: 80%;
+    }
+}

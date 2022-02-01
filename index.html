@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>TinDog</title>
+
   <!-- Icon and fonts -->
   <link rel="icon" href="https://uc-emoji.azureedge.net/orig/0c/679cb500d7eef0d342dbda43574960.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +24,7 @@
 </head>
 
 <body>
-
-  <section id="title">
+  <section class="colored-section" id="title">
     <div class="container-fluid">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -36,19 +36,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="#cta">Download</a>
             </li>
           </ul>
         </div>
       </nav>
-
-
 
       <!-- Title -->
       <div class="row">
@@ -59,7 +57,7 @@
           <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>
             Download</button>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 title-image-div">
           <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
         </div>
       </div>
@@ -67,21 +65,18 @@
   </section>
 
   <!-- Features -->
-
-  <section id="features" class="container-fluid text-center">
+  <section id="features" class="white-section container-fluid text-center">
     <div class="row">
       <div class="col-lg-4 col-md-4">
         <i class="fas fa-check-circle"></i>
         <h3>Easy to use.</h3>
         <p>So easy to use, even your dog could do it.</p>
       </div>
-
       <div class="col-lg-4 col-md-4">
         <i class="fas fa-bullseye"></i>
         <h3>Elite Clientele</h3>
         <p>We have all the dogs, the greatest dogs.</p>
       </div>
-
       <div class="col-lg-4 col-md-4">
         <i class="fas fa-heart"></i>
         <h3>Guaranteed to work.</h3>
@@ -90,11 +85,8 @@
     </div>
   </section>
 
-
   <!-- Testimonials -->
-
-  <section id="testimonials">
-
+  <section class="colored-section" id="testimonials">
     <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -111,7 +103,7 @@
         <div class="carousel-item">
           <h2 class="testimonial-text">I'm so happy I found my new best friend. I love TinDog!</h2>
           <img class="testimonial-image"
-            src="https://www.nokiamobilephonenews.co.uk/wp-content/uploads/newsimages1/52877637-10397951-this_white_pomeranian_puppy_has_become_an_internet_sensation_for-m-13_1642073473030.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3GFkUpmq8RWvJT3nHBj6lqRbhsf6QY7WG8A&usqp=CAU"
             alt="dog-profile">
           <em>Higeness, Atlanta</em>
         </div>
@@ -125,35 +117,22 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-
-
-
-
   </section>
 
-
   <!-- Press -->
-
   <section id="press">
     <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
     <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
     <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
     <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
-
   </section>
 
-
   <!-- Pricing -->
-
-  <section id="pricing">
-
+  <section id="pricing" class="white-section">
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
-
     <div class="row">
-
-      <div class="col-lg-4 col-md-6">
+      <div class="pricing-column col-lg-4 col-md-6">
         <div class="card">
           <div class="card-header">
             <h3>Chihuahua</h3>
@@ -163,12 +142,11 @@
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
             <p>Unlimited App Usage</p>
-            <button class="w-100 btn btn-lg btn-outline-primary" type="button">Sign Up</button>
+            <button class="w-100 btn btn-lg btn-outline-dark" type="button">Sign Up</button>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-4 col-md-6">
+      <div class="pricing-column col-lg-4 col-md-6">
         <div class="card">
           <div class="card-header">
             <h3>Labrador</h3>
@@ -178,12 +156,11 @@
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
+            <button class="w-100 btn btn-lg btn-tindog" type="button">Sign Up</button>
           </div>
         </div>
       </div>
-
-      <div class="col">
+      <div class="pricing-column col">
         <div class="card">
           <div class="card-header">
             <h3>Mastiff</h3>
@@ -194,35 +171,29 @@
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
+            <button class="w-100 btn btn-lg btn-dark" type="button">Sign Up</button>
           </div>
         </div>
       </div>
-
     </div>
-
   </section>
-
 
   <!-- Call to Action -->
-
-  <section id="cta">
-
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
+  <section class="colored-section" id="cta">
+    <h2>Find the True Love of Your Dog's Life Today.</h2>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i>
+      Download</button>
   </section>
 
-
   <!-- Footer -->
-
-  <footer id="footer">
-
+  <footer class="white-section" id="footer">
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook-f"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fas fa-envelope"></i>
     <p>© Copyright TinDog</p>
-
   </footer>
-
 
 </body>
 
